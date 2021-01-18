@@ -1,0 +1,51 @@
+<div class="container d-flex justify-content-center align-items-center">
+    <div class="card">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form">
+                    <form  (ngSubmit)="onSubmit()">
+                    <h2>Create Buyer</h2>
+                    <div class="inputbox mt-3">
+                        <label> User Id</label>
+                        <input type="number" class="form-control" id="userId" [(ngModel)]="buyer.userId" name="userId"
+                            placeholder="User Id">
+                    </div>
+                    <div class="inputbox mt-3">
+                        <label> Bid Amount</label>
+                        <input type="number" class="form-control" id="bidAmount" [(ngModel)]="buyer.bidAmount"
+                            name="bidAmount" placeholder="Bid Amount">
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="text-right"> <button class="btn btn-success register btn-block"
+                                type="submit">Submit</button> </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="text-center mt-5"> <img src="https://i.imgur.com/98GXnDD.png" width="400"> </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- <div class="col-md-6 offset-md-3">
+    <h3> Create Buyer </h3>
+    <form (ngSubmit)="onSubmit()">
+
+        <div class="form-group">
+            <label> User Id</label>
+            <input type="number" class="form-control" id="userId" [(ngModel)]="buyer.userId" name="userId">
+        </div>
+
+        <div class="form-group">
+            <label> Bid Amount</label>
+            <input type="number" class="form-control" id="bidAmount" [(ngModel)]="buyer.bidAmount" name="bidAmount">
+        </div>
+
+        <button class="btn btn-success" type="submit">Submit</button>
+
+    </form>
+</div> -->

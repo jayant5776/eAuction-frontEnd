@@ -1,0 +1,23 @@
+<h2> Buyer List</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th> Buyer Id </th>
+            <th> Bid Amount</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let buyer of buyers">
+            <td> {{ buyer.buyerId }} </td>
+            <td> {{ buyer.bidAmount }} </td>
+            <td>
+                <button (click)="updateBuyer(buyer.buyerId)" class="btn btn-info"> Update</button>
+                <button (click)="deleteBuyer(buyer.buyerId)" class="btn btn-danger" style="margin-left: 10px">
+                    Delete</button>
+                <button (click)="buyerDetails(buyer.buyerId)" class="btn btn-info" style="margin-left: 10px">
+                    View</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
